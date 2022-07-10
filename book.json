@@ -1,0 +1,37 @@
+{
+	"title": "Web developer guide",
+	"plugins-docs": "https://www.jianshu.com/p/53fccf623f1c",
+	"styles": {
+		"website": "./website.css"
+	},
+	"plugins": [
+		"mermaid", 
+		"custom-js-css", 
+		"expandable-chapters",
+		"github",
+		"splitter",
+		"baidu",
+		"-toggle-chapters", "sectionx", "search", 
+		"search-plus","custom-html", "-sharing", 
+		"-fontsettings","tbfed-pagefooter",
+		"copy-code-button","alerts","puml"
+	],
+	"pluginsConfig": {
+        "baidu": {
+            "token": "7c9039a407cc44501fd320ae19457580"
+        },
+        "github": {
+            "url": "https://github.com/shuise/web-developer-guide/"
+        },
+		"tbfed-pagefooter": {
+	        "copyright":"水色",
+	        "modify_label": "修订：",
+	        "modify_format": "YYYY-MM-DD"
+	    }
+	},
+	"links": {
+		"-sidebar": {
+            "Custom link name": "https://customlink.com"
+        }
+	}
+}

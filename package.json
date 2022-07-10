@@ -1,0 +1,13 @@
+{
+  "name": "Web developer guide",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {},
+  "author": "shuiseshuise@hotmail.com",
+  "license": "MIT",
+  "devDependencies": {},
+  "dependencies": {
+    "ebook-convert": "^2.0.1"
+  }
+}
