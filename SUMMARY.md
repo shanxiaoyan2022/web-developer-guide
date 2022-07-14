@@ -3,30 +3,29 @@
 	*   [代码编辑器](./prepare/editor.md)
 	*   [文档编写](./prepare/markdown.md)
 	*   [运行环境](./prepare/web-server.md)
-   
 *   [基础入门](./basic/index.md)   
 	*   [html](./basic/html.md)
 	*   [css](./basic/css.md)
 	*   [javascript](./basic/javascript.md)
-
-*   [文档撰写]()
-
-*	[不规则图形及动画]()
-	*   [css3 动画](./basic/css3.md)
-	*   canvas
-	*	phaser
-
-* 进阶
-	*   接口与 http 协议
-	*   图片处理、文件上传
-	*   模块化思想
-	*   [组件](./senior/web-component.md)
-
-* 框架
-	*	双向绑定
-	*   vue
-	*   react
-	*   小程序
-
-*   chrome 浏览器扩展
+	*   [异步](./basic/async.md)
+*	[不规则图形及动画](./graphics/index.md)
+	*   [css3 动画](./graphics/css3.md)
+	*   [canvas](./graphics/canvas.md)
+*   [进阶](./senior/index.md)
+    *   [接口与 http 协议](./senior/http-api.md)
+    *   [图片处理、文件上传](./senior/upload.md)
+    *   [模块化思想](./senior/modules.md)
+    *   [组件](./senior/web-component.md)
+*	[工程管理](./project/index.md)
+	*   [文档管理](./project/doc.md)
+	*   [体系化命名](./project/define.md)
+	*   [工程结构](./project/struct.md)
+	*   [模板管理](./project/tpl.md)
+	*   [数据管理](./project/data.md)
+*   [框架](./framework/index.md)
+     *   [vue](./framework/vue.md)
+     *   [react](./framework/react.md)
+     *   [微信小程序](./framework/weixin-mp.md)
+*   [chrome 浏览器扩展](./chrome-exsitions.md)
+*   [浏览器书签](./bookmarklet.md)
 *   [精选前端开源项目](./projects.md)
