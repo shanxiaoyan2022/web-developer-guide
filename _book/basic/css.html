@@ -535,27 +535,109 @@
                                 <section class="normal markdown-section">
                                 
                                 <h1 id="css-&#x57FA;&#x7840;">css &#x57FA;&#x7840;</h1>
-<p><strong>&#x76EE;&#x6807;&#xFF1A;</strong></p>
+<p>&#x4F5C;&#x4E1A;&#xFF1A;&#x6309;&#x7167;&#x8BBE;&#x8BA1;&#x7A3F;&#x7F8E;&#x5316;&#x4E4B;&#x524D;&#x7684; html</p>
+<h2 id="&#x76EE;&#x6807;&#xFF1A;">&#x76EE;&#x6807;&#xFF1A;</h2>
 <ol>
-<li>&#x638C;&#x63E1;&#x5E38;&#x7528;&#x7684; css &#x9009;&#x62E9;&#x5668;&#x7528;&#x6CD5;</li>
-<li>&#x638C;&#x63E1;&#x5E03;&#x5C40;&#x65B9;&#x6CD5;</li>
-<li>&#x80FD;&#x5236;&#x4F5C;&#x7B80;&#x5355;&#x7684;&#x5E73;&#x79FB;&#x3001;&#x7F29;&#x653E;&#x3001;&#x65CB;&#x8F6C;&#x7B49;&#x52A8;&#x753B;</li>
+<li>css &#x57FA;&#x7840; <a href="https://developer.mozilla.org/zh-CN/docs/Learn/Getting_started_with_the_web/CSS_basics" target="_blank">https://developer.mozilla.org/zh-CN/docs/Learn/Getting_started_with_the_web/CSS_basics</a></li>
+<li>&#x638C;&#x63E1;&#x5E38;&#x7528;&#x7684; css &#x9009;&#x62E9;&#x5668;&#x7528;&#x6CD5;  <a href="https://www.w3school.com.cn/css/index.asp" target="_blank">https://www.w3school.com.cn/css/index.asp</a></li>
+<li>&#x638C;&#x63E1;&#x5E03;&#x5C40;&#x65B9;&#x6CD5;  <a href="https://www.runoob.com/css/css-website-layout.html" target="_blank">https://www.runoob.com/css/css-website-layout.html</a></li>
+<li>&#x80FD;&#x5236;&#x4F5C;&#x7B80;&#x5355;&#x7684;&#x5E73;&#x79FB;&#x3001;&#x7F29;&#x653E;&#x3001;&#x65CB;&#x8F6C;&#x7B49;&#x52A8;&#x753B;  <a href="https://www.runoob.com/css3/css3-animations.html" target="_blank">https://www.runoob.com/css3/css3-animations.html</a></li>
 </ol>
-<p><strong>&#x6CE8;&#x610F;&#x4E8B;&#x9879;&#xFF1A;</strong></p>
+<h2 id="&#x8BB2;&#x89E3;&#xFF1A;">&#x8BB2;&#x89E3;&#xFF1A;</h2>
+<p>&#x51C6;&#x5907;&#x5DE5;&#x4F5C;&#xFF1A;&#x5728;&#x4E4B;&#x524D; html &#x6587;&#x4EF6;&#x7684; head &#x4E4B;&#x95F4;&#x8D34;&#x5165;&#x4EE3;&#x7801; <code>&lt;link rel=&quot;stylesheet&quot; href=&quot;***.css&quot;&gt;</code>&#xFF0C;&#x6839;&#x636E;&#x5B9E;&#x9645;&#x4F4D;&#x7F6E;&#x5199;&#x5165;&#x6587;&#x4EF6;&#x8DEF;&#x5F84;&#xFF0C;&#x5728; css &#x6587;&#x4EF6;&#x4E2D;&#x5199;&#x6837;&#x5F0F;&#x3002;</p>
+<pre><code>.digest {
+    border: 1px solid #ccc;
+    padding: 10px;
+    color: #333;
+}
+</code></pre><p><code>.digest</code> &#x53EB;&#x9009;&#x62E9;&#x5668;&#xFF0C;&#x6307;&#x7684;&#x662F; css &#x9009;&#x62E9;&#x9875;&#x9762;&#x4E2D;&#x7684;&#x8282;&#x70B9;&#xFF0C;&#x5BF9;&#x5E94;&#x9875;&#x9762;&#x4E2D;&#x7684; <code>class=&quot;digest&quot;</code>&#xFF0C;&#x4E0E;&#x5177;&#x4F53;&#x6807;&#x7B7E;&#x65E0;&#x5173;</p>
+<p><code>{}</code> &#x4E3A;&#x56FA;&#x5B9A;&#x8BED;&#x6CD5;&#xFF0C;<code>{}</code> &#x4E4B;&#x95F4;&#x5199;&#x5165; css &#x89C4;&#x5219;&#xFF0C;&#x5EFA;&#x8BAE;&#x6BCF;&#x884C;&#x4E00;&#x4E2A;&#xFF0C;&#x683C;&#x5F0F;&#x4E3A; <code>css rule: value</code>&#xFF0C;&#x5FC5;&#x987B; <code>;</code> &#x7ED3;&#x5C3E;</p>
+<h3 id="css-&#x89C4;&#x5219;&#x89E3;&#x91CA;">css &#x89C4;&#x5219;&#x89E3;&#x91CA;</h3>
+<p>&#x1F447;&#x1F3FB;&#x4F5C;&#x7528;&#x57DF;</p>
+<pre><code>.a .b {}     // &#x6CE8;&#x610F; .a &#x4E0E; .b &#x4E4B;&#x95F4;&#x6709;&#x534A;&#x89D2;&#x7A7A;&#x683C;
+
+&lt;div class=&quot;a&quot;&gt;
+    &lt;span class=&quot;b&quot;&gt;&lt;/span&gt;
+&lt;/div&gt;     
+//&#x751F;&#x6548;
+
+&lt;div class=&quot;a&quot;&gt;
+    &lt;div class=&quot;a-child&quot;&gt;
+        &lt;span class=&quot;b&quot;&gt;&lt;/span&gt;
+    &lt;/div&gt;
+&lt;/div&gt; 
+//&#x751F;&#x6548;
+
+&lt;div class=&quot;a&quot;&gt;&lt;/div&gt; 
+&lt;span class=&quot;b&quot;&gt;&lt;/span&gt;
+//&#x4E0D;&#x751F;&#x6548;
+</code></pre><p>&#x1F447;&#x1F3FB;&#x9501;&#x5B9A;&#x6807;&#x7B7E;&#xFF0C;<strong>&#x4E0D;&#x63A8;&#x8350;&#x4F7F;&#x7528;</strong></p>
+<pre><code>div.a{}
+
+&lt;div class=&quot;a&quot;&gt;        //&#x751F;&#x6548;
+&lt;span class=&quot;a&quot;&gt;  //&#x4E0D;&#x751F;&#x6548;
+</code></pre><p>&#x1F447;&#x1F3FB;&#x53CC; class &#x9501;&#x5B9A;&#xFF0C;<strong>&#x4E0D;&#x63A8;&#x8350;&#x4F7F;&#x7528;</strong></p>
+<pre><code>.a.b{}    // &#x6CE8;&#x610F; .a &#x4E0E; .b &#x7D27;&#x8D34;&#xFF0C;&#x6CA1;&#x6709;&#x534A;&#x89D2;&#x7A7A;&#x683C;
+
+
+&lt;span class=&quot;a b&quot;&gt;  //&#x751F;&#x6548;
+
+&lt;div class=&quot;a&quot;&gt;
+    &lt;span class=&quot;b&quot;&gt;&lt;/span&gt;
+&lt;/div&gt;     
+//&#x4E0D;&#x751F;&#x6548;
+</code></pre><p>&#x1F447;&#x1F3FB;css &#x5408;&#x5E76;&#x53CA;&#x8986;&#x76D6;</p>
+<pre><code>.a { 
+    color: #ccc; 
+    font-size:12px; 
+}
+.a { 
+    border: 1px solid #cd0000; 
+    font-size:14px; 
+}
+
+//&#x7B49;&#x6548;
+.a {
+    color: #ccc; 
+    border: 1px solid #cd0000;  // .a &#x540C;&#x540D;&#x5408;&#x5E76;
+    font-size: 14px;  //&#x540E;&#x9762;&#x8986;&#x76D6;&#x524D;&#x9762;
+}
+</code></pre><p>&#x1F447;&#x1F3FB;&#x6DF1;&#x5EA6;&#x4F18;&#x5148;&#xFF0C;&#x9009;&#x62E9;&#x5668;&#x5B9A;&#x4E49;&#x7684;&#x6DF1;&#x5EA6;&#x5177;&#x6709;&#x4F18;&#x5148;&#x7EA7;&#xFF0C;&#x4E5F;&#x5C31;&#x662F;&#x8BF4;&#xFF0C;&#x9009;&#x62E9;&#x5668;&#x8D8A;&#x7CBE;&#x51C6;&#xFF0C;&#x8D8A;&#x5177;&#x6709;&#x4F18;&#x5148;&#x6743;</p>
+<pre><code>.c { 
+    font-size: 12px; 
+}
+.a .c { 
+    font-size: 14px; 
+}
+
+&lt;div class=&quot;a&quot;&gt;
+    &lt;span class=&quot;c&quot;&gt;&#x8FD9;&#x91CC;&#x6587;&#x5B57;&#x6700;&#x7EC8;&#x663E;&#x793A;&#x4E3A; 14px&lt;/span&gt;
+&lt;/div&gt;
+</code></pre><p>&#x1F447;&#x1F3FB;&#x591A;&#x9009;&#x62E9;&#x5668;&#x540C;&#x65F6;&#x5B9A;&#x4E49;</p>
+<pre><code>.a,
+.b {
+    font-size: 14px;
+}
+
+//&#x7B49;&#x540C;&#x4E8E;
+.a {
+    font-size: 14px;
+}
+.b {
+    font-size: 14px;
+}
+
+&lt;div class=&quot;a&quot;&gt;&#x8FD9;&#x91CC;&#x6587;&#x5B57;&#x6700;&#x7EC8;&#x663E;&#x793A;&#x4E3A; 14px&lt;/div&gt;
+&lt;span class=&quot;b&quot;&gt;&#x8FD9;&#x91CC;&#x6587;&#x5B57;&#x4E5F;&#x662F; 14px&lt;/span&gt;
+</code></pre><p><strong>&#x6CE8;&#x610F;&#x4E8B;&#x9879;&#xFF1A;</strong></p>
 <ol>
-<li>&#x4E0D;&#x4F7F;&#x7528; id &#x5B9A;&#x4E49;&#xFF0C;&#x4F7F;&#x7528; class&#xFF0C;class &#x4E0D;&#x5F97;&#x4EE5;&#x6570;&#x5B57;&#x6216;&#x7279;&#x6B8A;&#x5B57;&#x7B26;&#x5F00;&#x5934;</li>
-<li>&#x63A8;&#x8350; bem &#x89C4;&#x5219; <a href="https://juejin.cn/post/6844903672162304013" target="_blank">https://juejin.cn/post/6844903672162304013</a></li>
+<li>&#x63A8;&#x8350;&#x53EA;&#x4F7F;&#x7528; class&#xFF0C;<strong>class &#x4E0D;&#x5F97;&#x4EE5;&#x6570;&#x5B57;&#x6216;&#x7279;&#x6B8A;&#x5B57;&#x7B26;&#x5F00;&#x5934;</strong></li>
+<li>&#x4E0D;&#x4F7F;&#x7528; id&#xFF0C;&#x56E0;&#x4E3A; id &#x5728;&#x9875;&#x9762;&#x9700;&#x8981;&#x4FDD;&#x6301;&#x552F;&#x4E00;&#xFF0C;id &#x5B9A;&#x4E49;&#x7684; css &#x96BE;&#x4EE5;&#x590D;&#x7528;</li>
+<li>&#x547D;&#x540D;&#x65B9;&#x5F0F;&#x63A8;&#x8350; bem &#x89C4;&#x5219; <a href="https://juejin.cn/post/6844903672162304013" target="_blank">https://juejin.cn/post/6844903672162304013</a></li>
 <li>css &#x4EE3;&#x7801;&#x90FD;&#x5206;&#x79BB;&#x6210;&#x72EC;&#x7ACB;&#x7684;&#x6587;&#x4EF6;&#x5F15;&#x7528;</li>
 </ol>
-<p><strong>&#x63A8;&#x8350;&#x9605;&#x8BFB;&#xFF1A;</strong></p>
-<ol>
-<li><a href="https://developer.mozilla.org/zh-CN/docs/Learn/Getting_started_with_the_web/CSS_basics" target="_blank">https://developer.mozilla.org/zh-CN/docs/Learn/Getting_started_with_the_web/CSS_basics</a></li>
-<li>css &#x547D;&#x4EE4; <a href="https://www.w3school.com.cn/css/index.asp" target="_blank">https://www.w3school.com.cn/css/index.asp</a></li>
-<li>css &#x5E03;&#x5C40; <a href="https://www.runoob.com/css/css-website-layout.html" target="_blank">https://www.runoob.com/css/css-website-layout.html</a></li>
-<li>css3 &#x52A8;&#x753B; <a href="https://www.runoob.com/css3/css3-animations.html" target="_blank">https://www.runoob.com/css3/css3-animations.html</a></li>
-</ol>
 <footer class="page-footer"><span class="copyright">&#x6C34;&#x8272; all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">&#x4FEE;&#x8BA2;&#xFF1A;
-2022-07-10
+2022-07-14
 </span></footer>
                                 
                                 </section>
@@ -615,7 +697,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"css","level":"1.3.2","depth":2,"next":{"title":"javascript","level":"1.3.3","depth":2,"path":"basic/javascript.md","ref":"./basic/javascript.md","articles":[]},"previous":{"title":"html","level":"1.3.1","depth":2,"path":"basic/html.md","ref":"./basic/html.md","articles":[]},"dir":"ltr"},"config":{"plugins":["mermaid","custom-js-css","expandable-chapters","github","splitter","baidu","-toggle-chapters","sectionx","search","search-plus","custom-html","-sharing","-fontsettings","tbfed-pagefooter","copy-code-button","alerts","puml","livereload"],"styles":{"website":"./website.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"水色","modify_label":"修订：","modify_format":"YYYY-MM-DD"},"github":{"url":"https://github.com/shuise/web-developer-guide/"},"puml":{},"livereload":{},"custom-html":{},"splitter":{},"search":{},"mermaid":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sectionx":{},"highlight":{},"alerts":{},"copy-code-button":{},"custom-js-css":{},"baidu":{"token":"7c9039a407cc44501fd320ae19457580"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"expandable-chapters":{},"search-plus":{}},"plugins-docs":"https://www.jianshu.com/p/53fccf623f1c","theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Web developer guide","links":{"-sidebar":{"Custom link name":"https://customlink.com"}},"gitbook":"*"},"file":{"path":"basic/css.md","mtime":"2022-07-10T03:09:14.828Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-07-10T04:36:37.997Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"css","level":"1.3.2","depth":2,"next":{"title":"javascript","level":"1.3.3","depth":2,"path":"basic/javascript.md","ref":"./basic/javascript.md","articles":[]},"previous":{"title":"html","level":"1.3.1","depth":2,"path":"basic/html.md","ref":"./basic/html.md","articles":[]},"dir":"ltr"},"config":{"plugins":["mermaid","custom-js-css","expandable-chapters","github","splitter","baidu","-toggle-chapters","sectionx","search","search-plus","custom-html","-sharing","-fontsettings","tbfed-pagefooter","copy-code-button","alerts","puml","livereload"],"styles":{"website":"./website.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"水色","modify_label":"修订：","modify_format":"YYYY-MM-DD"},"github":{"url":"https://github.com/shuise/web-developer-guide/"},"puml":{},"livereload":{},"custom-html":{},"splitter":{},"search":{},"mermaid":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sectionx":{},"highlight":{},"alerts":{},"copy-code-button":{},"custom-js-css":{},"baidu":{"token":"7c9039a407cc44501fd320ae19457580"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"expandable-chapters":{},"search-plus":{}},"plugins-docs":"https://www.jianshu.com/p/53fccf623f1c","theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Web developer guide","links":{"-sidebar":{"Custom link name":"https://customlink.com"}},"gitbook":"*"},"file":{"path":"basic/css.md","mtime":"2022-07-14T04:42:44.423Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-07-14T04:42:48.543Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
