@@ -1,4 +1,5 @@
 # javascript 基础
+> 以下简称为 js
 
 作业：
 
@@ -8,26 +9,67 @@
 2.   掌握变量定义、作用域及函数定义
 3.   掌握点击弹出、鼠标经过变色等常见交互的开发
 
+
+
 ## 变量、函数及作用域
 
-## 浏览器对象
+变量 https://www.runoob.com/js/js-variables.html
 
-## window 对象
+类型转化 https://www.runoob.com/js/js-type-conversion.html
 
-## DOM 的概念
+函数 https://www.runoob.com/js/js-functions.html
 
-## 鼠标、键盘事件
+作用域 https://www.runoob.com/js/js-scope.html
 
-## 时间事件
+函数及传参 https://www.runoob.com/js/js-functions.html
 
-timeout
-interval
+在 js 中，只有函数才能创建一个新的作用域，函数内部的变量禁止外部访问，除非函数通过特定的方式对外暴露。
+
+几个比较实用的好原则：
+1. 严格注意大小写
+2. 启用严格模式训练 https://www.runoob.com/js/js-strict.html
+3. 隔离封闭：函数内部逻辑只依赖传入的参数
+4. 定义与执行分离：写代码时把所有代码都写入函数，通过调用函数执行
+5. js 是弱类型语言，数据类型在运行时会自动调整，请注意非法操作数据
+6. 不修改不属于自己代码定义的数据和方法
 
 
-## 推荐阅读：
 
-1.   函数及传参 https://www.runoob.com/js/js-functions.html
-2.   事件 https://www.runoob.com/js/js-events.html
-3.   作用域 https://www.runoob.com/js/js-scope.html
-4.   dom https://www.runoob.com/js/js-htmldom-html.html
-5.   dom css https://www.runoob.com/js/js-htmldom-css.html
+## bom 对象
+
+window https://www.runoob.com/js/js-window.html
+
+navigator https://www.runoob.com/js/js-window-navigator.html
+
+location https://www.runoob.com/js/js-window-location.html
+
+
+
+## 事件
+
+原生事件 https://www.runoob.com/jsref/dom-obj-event.html
+
+
+
+## 计时事件
+
+https://www.runoob.com/js/js-timing.html
+
+setTimeout
+
+setInterval
+
+
+
+## Dom 的概念
+
+dom https://www.runoob.com/jsref/dom-obj-document.html
+
+dom css https://www.runoob.com/js/js-htmldom-css.html
+
+js 可通过 dom 获取页面内容，修改页面内容等
+
+
+
+## 代码示例
+
