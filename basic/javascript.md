@@ -61,15 +61,19 @@ setInterval
 
 
 
-## Dom 的概念
+## dom 的概念
 
 dom https://www.runoob.com/jsref/dom-obj-document.html
 
 dom css https://www.runoob.com/js/js-htmldom-css.html
 
-js 可通过 dom 获取页面内容，修改页面内容等
+**js 可以**
+
+1.   读取/修改 页面内容（节点属性、内容及子节点）
+2.   读取/修改 css
 
 
 
 ## 代码示例
 
+https://jquery.cuishifeng.cn/

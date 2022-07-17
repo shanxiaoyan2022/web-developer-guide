@@ -4,7 +4,7 @@
 
 绘制
 
-
+[demo](./canvas/canvas.html)
 
 ## phaser
 
