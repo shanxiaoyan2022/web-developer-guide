@@ -17,7 +17,7 @@
 
 代码需要引用其他资源，比如页面引用 css、js、图片/视频等文件，css 引用背景图片等。
 
-这就设计路径问题，本地计算机的路径一般为 `/Users/shuise/web-developer-guide/basic/res` 或 `files:///d:/shuise/web-developer-guide/basic/res`，这些路径只在本地有效，代码部署到服务器端就会时效，因为服务器是不可能保持本地文件树架构。
+这就设计路径问题，本地计算机的路径一般为 `/Users/shuise/web-developer-guide/basic/res` 或 `files:///d:/shuise/web-developer-guide/basic/res`，这些路径只在本地有效，代码部署到服务器端就会失效，因为服务器是不可能保持本地文件树架构。
 
 解决这个问题就是靠站点，基于本地某个 `目录 S`运行 svrx 服务，就等于指定 `目录 S` 为网站根目录，开发完成后把 `目录 S` 部署到服务器并指定为根目录，即可保持远端与本地的一致性。
 
